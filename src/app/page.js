@@ -3,6 +3,7 @@ import Skeleton from "@/lib/components/Skeleton";
 
 import Home1 from "@/lib/components/homePage/Home1";
 import { Axios } from "@/lib/helpers/AxiosInstance";
+import Adds from "@/lib/components/Adds";
 
 const Home = async ({ searchParams }) => {
   // let { data } = await Axios.get(`/api/both/category-list`);
@@ -11,7 +12,8 @@ const Home = async ({ searchParams }) => {
   );
   // console.log(data);
   return (
-    <div>
+    <div className=" relative">
+      <Adds />
       <Suspense fallback=<Skeleton />>
         <Home1 searchParams={searchParams} promise={data} />
       </Suspense>

@@ -11,8 +11,17 @@ const About = async () => {
     "use server";
     console.log(22222222222);
   };
-  await wait(5000);
-  return <div>About</div>;
+  await wait(2000);
+  return (
+    <div>
+      <Image
+        src="/adds.jpeg"
+        width={500}
+        height={300}
+        alt="Picture of the author"
+      />
+    </div>
+  );
 };
 
 export default About;

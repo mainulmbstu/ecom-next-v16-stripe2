@@ -10,7 +10,7 @@ const InfoModal = ({ value }) => {
       text.push(
         <p key={Math.random()}>
           {k} : {info[k]?.toString()}
-        </p>
+        </p>,
       );
       if (typeof info[k] === "object") {
         infoFunc(info[k]);
@@ -18,7 +18,6 @@ const InfoModal = ({ value }) => {
     }
     return text;
   };
-
   return (
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}

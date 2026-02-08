@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "E-com-NextJS-v16",
+    default: "E-com-NextJS-v16-stripe",
     template: "%s | E-commerce",
     // absolute:""
   },
